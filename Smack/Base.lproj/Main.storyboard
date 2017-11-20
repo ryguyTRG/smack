@@ -24,36 +24,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-9X-TPy">
-                                <rect key="frame" x="39" y="44" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-9X-TPy">
+                                <rect key="frame" x="5" y="44" width="59" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1d-GC-2UF">
-                                <rect key="frame" x="39" y="107" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1d-GC-2UF">
+                                <rect key="frame" x="5" y="85" width="65" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-oJ-kWu">
-                                <rect key="frame" x="284" y="44" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3y-ap-Dok">
+                                <rect key="frame" x="100" y="593" width="46" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3y-ap-Dok">
-                                <rect key="frame" x="176" y="593" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-i7-2vZ">
-                                <rect key="frame" x="16" y="519" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-i7-2vZ">
+                                <rect key="frame" x="5" y="572" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="fCI-in-HgN"/>
+                                    <constraint firstAttribute="height" constant="75" id="sxV-Yb-1Qk"/>
+                                </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFi-Cc-qUq">
+                                <rect key="frame" x="0.0" y="123" width="375" height="429"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-oJ-kWu">
+                                <rect key="frame" x="281" y="81" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O0f-oJ-kWu" firstAttribute="centerY" secondItem="B1d-GC-2UF" secondAttribute="centerY" id="0g7-KC-ShQ"/>
+                            <constraint firstItem="6y8-9X-TPy" firstAttribute="leading" secondItem="cwJ-vZ-bqd" secondAttribute="leading" constant="5" id="BBW-H8-Mu4"/>
+                            <constraint firstItem="cwJ-vZ-bqd" firstAttribute="bottom" secondItem="YgU-i7-2vZ" secondAttribute="bottom" constant="20" id="Hz7-Zq-HbN"/>
+                            <constraint firstItem="uFi-Cc-qUq" firstAttribute="trailing" secondItem="cwJ-vZ-bqd" secondAttribute="trailing" id="JPd-Zp-N1K"/>
+                            <constraint firstItem="B1d-GC-2UF" firstAttribute="leading" secondItem="cwJ-vZ-bqd" secondAttribute="leading" constant="5" id="LaZ-FV-NTs"/>
+                            <constraint firstItem="uFi-Cc-qUq" firstAttribute="leading" secondItem="cwJ-vZ-bqd" secondAttribute="leading" id="NEE-c8-bMo"/>
+                            <constraint firstItem="YgU-i7-2vZ" firstAttribute="leading" secondItem="cwJ-vZ-bqd" secondAttribute="leading" constant="5" id="OZ2-zy-Kfe"/>
+                            <constraint firstItem="z3y-ap-Dok" firstAttribute="leading" secondItem="YgU-i7-2vZ" secondAttribute="trailing" constant="20" id="STj-Io-f02"/>
+                            <constraint firstItem="uFi-Cc-qUq" firstAttribute="top" secondItem="O0f-oJ-kWu" secondAttribute="bottom" constant="20" id="WEi-Le-A49"/>
+                            <constraint firstItem="6y8-9X-TPy" firstAttribute="top" secondItem="cwJ-vZ-bqd" secondAttribute="top" constant="24" id="XwW-So-ee8"/>
+                            <constraint firstItem="YgU-i7-2vZ" firstAttribute="top" secondItem="uFi-Cc-qUq" secondAttribute="bottom" constant="20" id="YdG-xa-5ca"/>
+                            <constraint firstItem="cwJ-vZ-bqd" firstAttribute="trailing" secondItem="O0f-oJ-kWu" secondAttribute="trailing" constant="72" id="rAa-TI-QOL"/>
+                            <constraint firstItem="B1d-GC-2UF" firstAttribute="top" secondItem="6y8-9X-TPy" secondAttribute="bottom" constant="20" id="thw-Kf-KEz"/>
+                            <constraint firstItem="z3y-ap-Dok" firstAttribute="centerY" secondItem="YgU-i7-2vZ" secondAttribute="centerY" id="xIy-hF-i7X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cwJ-vZ-bqd"/>
                     </view>
                 </viewController>
@@ -134,6 +156,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
